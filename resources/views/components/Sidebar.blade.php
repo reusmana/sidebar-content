@@ -1,5 +1,7 @@
+{{-- <button class="drawer-toggle-menu"><i class="fa-solid fa-bars"></i></button> --}}
 <div id="sidebar" class="sidebar-container open is-header-exits">
     <button class="drawer-toggle"><i class="fa-solid fa-chevron-left"></i></button>
+    {{-- <button class="drawer-close"><i class="fa-solid fa-xmark fa-2xl"></i></button> --}}
     <div class="sidebar-content">
         <div class="sidebar-field">
             <div class="logo">

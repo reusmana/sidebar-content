@@ -5,7 +5,22 @@ const arrow = document.querySelector(".drawer-toggle i");
 const sidebarMenu = document.querySelector(".sidebar-menu");
 const menuItems = document.querySelectorAll(".sidebar-menu li a");
 const buttonLogout = document.querySelector(".btn-logout");
+
+const headeruser = document.querySelector(".header-menu");
+const drawerToggleMenu = document.querySelector(".drawer-button");
 console.log(menuItems);
+
+drawerToggleMenu.addEventListener("click", () => {
+    headeruser.classList.toggle("open");
+});
+
+const viewportWidth = window.innerWidth;
+if (viewportWidth < 768) {
+    sidebar.classList.add("open-mobile");
+} else {
+    sidebar.classList.remove("open-mobile");
+}
+console.log(`Viewport width: ${viewportWidth}px`);
 
 if (header) {
     sidebar.classList.add("is-header-exits");
